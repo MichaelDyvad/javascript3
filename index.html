@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .myBox {
+            border-style: solid;
+            padding: 1em;
+            height: 300px;
+            margin-right: 1em;
+        }
+    </style>
+</head>
+<body>
+<h2>Fetch Demo</h2>
+<div style="display:flex">
+    <div class="myBox">
+        <h3>Get single user</h3>
+        <input id="input-id"><button id="btn-get">Get user</button>
+        <p>Name <span id="id-name"></span></p>
+        <p>Phone <span id="id-phone"></span></p>
+        <h3>Address</h3>
+        <p>Street <span id="id-street"></span></p>
+        <p>City <span id="id-city"></span></p>
+        <p id="error"></p>
+    </div>
+
+    <div class="myBox" style="width:50%;height:400px;overflow-y: scroll;">
+        <h3>Get all users</h3>
+        <button id="btn-get-all">Get all users</button>
+        <tabel>
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>phone</th>
+                <th>street</th>
+                <th>city</th>
+            </tr>
+            </thead>
+            <tbody id="tbl-body"></tbody>
+        </tabel>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
